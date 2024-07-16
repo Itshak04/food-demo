@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    background: #fff;
+}
+*,
+*:after,
+*:before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #ea9f4a;
+    --paragraph-color: #666666;
+    --black-color: #000;
+    --white-color: #fff;
+    --opensans: 'Open Sans', sans-serif;
+    --nav-hover-color: #eb8716;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* =========================
+        border
+============================ */
+/* *{
+    border: none;
+} */
+/* =========================
+        border end
+============================ */
+
+body{
+    font-family: var(--opensans);
+}
+.text-content{
+    width: 100%;
+    margin: auto;
+}
+
+/* =========================
+        navbar start
+============================ */
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    top: 2rem;
+    transition: all 0.3s ease-out;
+}
+.navbar-brand span{
+    font-size: 20px;
+    color: var(--black-color);
+    margin-left: 5px;
+    font-weight: 700;
+}
+.navbar-nav .nav-item{
+    /* padding:0 25px 0 0; */
+    padding-left: 25px;
+}
+.navbar-nav .nav-item .nav-link{
+    color: var(--black-color);
+}
+
+header .nav-item .nav-link{
+    position: relative;
+}
+
+header .nav-item .nav-link:hover,
+header .nav-item .nav-link.active{
+    color: var(--nav-hover-color) !important;
+    transition: all 0.3s;
+}
+
+header .nav-item .nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 4px;
+    width: 100%;
+    background-color: var(--nav-hover-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+header .nav-item .nav-link:hover::after{
+    opacity: 1;
+}
+header .nav-item .nav-link.active::after{
+    opacity: 1;
+} 
+
+/* header .navbar-nav .nav-item .nav-link:hover,.nav-link.active{
+    color: var(--nav-hover-color) !important;
+    transition: all 0.3s;
+}
+header .nav-link{
+    position: relative;
+}
+header .nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 4px;
+    width: 100%;
+    background-color: var(--nav-hover-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+header .nav-link:hover::after{
+    opacity: 1;
+}
+header .nav-link.active::after{
+    opacity: 1;
+} */
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+#navbarNav ul li a{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* change navbar style on scroll */
+.navigation-wrap.scroll-on{
+    position: fixed;
+    background-color: #e2e2e2;
+    top: -0rem;
+    left: 0;
+    width: 100%;
+    transition: all 0.15s ease-in-out 0s;
+}
+/* .navigation-wrap.scroll-on .nav-link{
+    color: var(--black-color);
+
+}
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link:active{
+    color: var(--primary-color);
+}*/
+/* .nav-item .nav-link.active{
+    color: var(--primary-color);
+    font-weight: 600;
+} */
+
+.navbar-toggler-icon{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* =========================
+        navbar end
+============================ */
+
+/* =========================
+        home start
+============================ */
+.top-banner h1{
+    font-weight: 700;
+    font-size: 55px;
+}
+.top-banner{
+    width: 100%;
+    background: url('../Images/Headre-img/Place\ Your\ Image\ Here.png') no-repeat center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+    
+}
+.findym{
+    border: none;
+    color: var(--primary-color);
+    padding: 14px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    letter-spacing: 1px;
+    transition: all 0.5s ease-out;
+}
+.findym:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.headerimg{
+    transition:transform .3s ;
+    cursor: pointer;
+}
+.headerimg:hover{
+    transform: scale(1.1);
+}
+
+/* =========================
+        home end
+============================ */
+
+/* =========================
+        menu start
+============================ */
+
+#menu h4{
+    font-weight: 800;
+}
+
+#menu .row img{
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+#menu #imghover img:hover{
+    transform: scale(1.2);
+}
+
+.order50off h1{
+    font-weight: 700;
+    font-size: 55px;
+
+}
+
+.shopnow{
+    border: none;
+    color: var(--primary-color);
+    padding: 12px;
+    background-color: var(--white-color);
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    letter-spacing: 1px;
+    transition: all 0.5s ease-out;
+    width: 170px;
+}
+.shopnow:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* =========================
+        menu end
+============================ */
+
+/* =========================
+        store start
+============================ */
+
+#store h4{
+    font-weight: 800;
+}
+
+#store .row img{
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+#store #storeimghover img:hover{
+    transform: scale(1.1);
+}
+
+/* =========================
+    company-profile start
+============================ */
+
+#company-profile img{
+    cursor: pointer;
+    -webkit-box-shadow: 17px 14px 32px -10px rgba(74,74,74,1);
+    -moz-box-shadow: 17px 14px 32px -10px rgba(74,74,74,1);
+    box-shadow: 17px 14px 32px -10px rgba(74,74,74,1);
+}
+
+#company-profile h1{
+    font-size: 55px;
+    font-weight: 900;
+    
+}
+
+#social-icons .bx{
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: 30px;
+    transition:transform .2s;
+}
+
+#social-icons .bx:hover{
+    transform: scale(1.1);
+}
+
+#social-icons .bxl-facebook-circle{
+    color: #316FF6;
+}
+
+#social-icons .bxl-instagram-alt{
+    color: #c51def;
+}
+
+#social-icons .bxl-twitter{
+    color: #1DA1F2;
+}
+
+/* =========================
+    company-profile end
+============================ */
+
+/* =========================
+        contact start
+============================ */
+
+#contact .bgimg{
+    width: 100%;
+    background: url('../Images/Headre-img/Place\ Your\ Image\ Here.png') no-repeat center;
+    background-size: cover; 
+}
+
+#contact h1{
+    font-size: 55px;
+    font-weight: 800;
+}
+
+#contact .form-control{
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid #999;
+}
+
+#contact input:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+#contact textarea:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.sndmsg{
+    border: none;
+    color: var(--primary-color);
+    padding: 13px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+    letter-spacing: 1px;
+    transition: all 0.5s ease-out;
+}
+.sndmsg:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+/* =========================
+        contact end
+============================ */
+
+/* =========================
+        about start
+============================ */
+
+#about .container-fluid{
+    background-color: var(--primary-color);
+}
+
+#about h4{
+    font-weight: 700;
+}
+
+#about .sitemap{
+    font-weight: 700;
+}
+
+#about .suscribe{
+    font-weight: 700;
+}
+
+#about button{
+    background-color: var(--white-color) !important;
+    color: var(--primary-color) !important;
+    border: none;
+    border-radius: 15px;
+}
+
+#about input{
+    border-radius: 15px;
+}
+
+#about .footer-icon li a{
+    font-size: 28px;
+    color: var(--white-color);
+}
+
+
+/* =========================
+        about end
+============================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

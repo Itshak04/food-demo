@@ -1,0 +1,153 @@
+@media (max-width: 991px) {
+    /* custome class */
+    .text-content{
+        width: 100%;
+    }
+    /* navbar brand */
+    .navigation-wrap .navbar-brand img{
+        width: 30%;
+    }
+    .navigation-wrap{
+        text-align: center;
+        background-color: #e2e2e2;
+        top: 0;
+    }
+    .navbar-toggler-icon{
+        color: var(--nav-hover-color);
+    }
+    /* banner design */
+    .top-banner{
+        padding: 9.375rem 0 9.375rem;
+    }
+    .top-banner h1{
+        font-weight: 700;
+        font-size: 45px;
+    }
+    .top-banner p{
+        font-size: 14px;
+    }
+    .findym{
+        border: none;
+        color: var(--primary-color);
+        padding: 10px;
+        background-color: var(--white-color);
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 16px;
+        box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+        -webkit-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+        letter-spacing: 1px;
+        transition: all 0.5s ease-out;
+    }
+    .findym:hover{
+        background: var(--primary-color);
+        color: var(--white-color);
+    }
+    /* navlink hover & active */
+
+    .nav-link::after{
+        content: '';
+        opacity: 0;
+        transition: none !important;
+        height: 4px;
+        width: 100%;
+        background-color: transparent !important;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    /* br tag none */
+    #menu #imghover p br{
+        display: none;
+    }
+    /* end br tag */
+    
+    #order50off h1{
+        font-weight: 700;
+        font-size: 40px;
+    }
+    
+    #order50off p{
+        font-size: 14px;
+    }
+
+    .shopnow{
+        border: none;
+        color: var(--primary-color);
+        padding: 10px;
+        background-color: var(--white-color);
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 16px;
+        box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+        -webkit-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 5px 4px 15px 0px rgba(0,0,0,0.30);
+        letter-spacing: 1px;
+        transition: all 0.5s ease-out;
+        width: 150px;
+    }
+    .shopnow:hover{
+        background: var(--primary-color);
+        color: var(--white-color);
+    }
+
+
+}
+
+@media (max-width: 548px) {
+    #menu .text-center{
+        margin-bottom: 1.5rem;
+    }
+    #menu #imghover p{
+        font-size: 13px;
+    }
+    .order50off button{
+        margin-top: 1.5rem; 
+    }
+    .order50off h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .order50off p{
+        font-size: 12px;
+    }
+    .we-take-care{
+        margin-top: 3rem;
+    }
+    #store .best-seller{
+        margin-top: 3rem;
+    }
+    #storeimghover .text-center{
+        margin-bottom: 1.5rem;
+    }
+    #company-profile h1{
+        font-size: 35px;
+    }
+    #company-profile p{
+        font-size: 12px;
+    }
+    #company-profile #social-icons i{
+        font-size: 30px;
+    }
+    #company-profile .heading-paragraph{
+        margin-top: 1.5rem;
+    }
+    #company-profile .heading-paragraph h1{
+        margin-bottom: 1.5rem;
+    }
+    #contact form h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    #contact form button{
+        margin-bottom: 3rem;
+    }
+}
+
+
+/* @media (max-width: 1024px) {
+    .headerimg{
+        
+    }
+} */
